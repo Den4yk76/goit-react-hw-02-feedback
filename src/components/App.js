@@ -1,3 +1,9 @@
-export default function Hello() {
-    return <h1>Hello!</h1>;
+import Feedback from './Feedback/Feedback';
+
+export default function App() {
+    return (
+        <div>
+            <Feedback />
+        </div>
+    );
 }
