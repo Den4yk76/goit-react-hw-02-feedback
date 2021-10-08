@@ -1,4 +1,5 @@
 import { Component } from 'react';
+import PropTypes from 'prop-types';
 
 export default class FeedbackOptions extends Component {
   render() {
@@ -12,3 +13,9 @@ export default class FeedbackOptions extends Component {
     );
   }
 }
+
+FeedbackOptions.propTypes = {
+  good: PropTypes.func,
+  neutral: PropTypes.func,
+  bad: PropTypes.func,
+};
